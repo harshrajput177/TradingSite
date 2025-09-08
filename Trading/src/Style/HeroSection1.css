@@ -1,0 +1,119 @@
+@import url("./Font.css");
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:80px 100px;
+  margin: auto;
+  max-width: 1400px;
+background: radial-gradient(circle at top center,  rgba(0, 128, 255, 0.616) 0%, transparent 60%);
+
+}
+
+.hero-text {
+   font-family: 'Poppins-Regular';
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-family: 'Poppins-Regular';
+line-height: 1.6;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero-text p {
+  font-family: 'Poppins-Regular';
+      width: 85%;
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 20px 0;
+  color: #ddd;
+}
+
+.highlight {
+  color: #00aaff;
+  font-weight: 500;
+}
+
+.email-box {
+  display: flex;
+  margin-top: 25px;
+        position: relative;
+}
+
+.email-box input {
+ font-family: 'Poppins-Regular';
+  padding: 22px;
+  border-radius: 12px;
+  border: none;
+  font-size: 1.2rem;
+  outline: none;
+  width:  80%;
+}
+
+.email-box button {
+position: absolute;
+ font-family: 'Poppins-Regular';
+right: 15%;
+bottom: 15%;
+   background: #043c78;
+  padding: 14px 20px;
+  border-radius: 12px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.hero-image img {
+  width: 600px;
+  border: 4px solid white;
+  border-right: none;  
+  border-radius: 8px;
+}
+
+.All-company-show {
+  font-weight:200 ;
+     font-family: 'Poppins-Regular';
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items:center; /* center se hata ke left start */
+  letter-spacing: 1.5px;
+}
+
+
+.all-company-img {
+    max-width: 87%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto; /* scroll allow */
+  overflow-y: hidden;
+  white-space: nowrap;
+  gap: 120px; /* gap thoda kam */
+  padding: 50px 20px;
+  scroll-behavior: smooth;
+}
+
+.all-company-img img {
+  width: 310px;
+  height: auto;
+  flex-shrink: 0;
+  object-fit: contain;
+  border-radius: 6px;
+    filter: grayscale(100%); /* default black & white */
+  transition: filter 0.3s ease;
+  cursor: pointer;
+}
+
+.all-company-img::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+
+.all-company-img img:hover {
+  filter: grayscale(0%); /* full color on hover */
+}

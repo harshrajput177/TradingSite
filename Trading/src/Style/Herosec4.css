@@ -1,0 +1,144 @@
+.Comp4-trade-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 60px 100px;
+  margin: auto;
+  max-width: 1400px;
+
+  /* Premium Dark Blue Glass Background */
+  background: rgba(0, 20, 50, 0.55); /* semi-transparent dark blue */
+  backdrop-filter: blur(18px); /* glass effect */
+  box-shadow: 0 0 40px rgba(0, 74, 148, 0.2); /* outer glow */
+
+  font-family: "Inter", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background glow behind the whole section */
+.Comp4-trade-section::before,
+.Comp4-trade-section::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  z-index: 0;
+}
+
+.Comp4-trade-section::before {
+  width: 400px;
+  height: 400px;
+  background: rgba(0, 102, 255, 0.4);
+  top: -150px;
+  left: -150px;
+}
+
+.Comp4-trade-section::after {
+  width: 350px;
+  height: 350px;
+  background: rgba(0, 162, 255, 0.35);
+  bottom: -120px;
+  right: -120px;
+}
+
+/* Image container */
+.Comp4-trade-card {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  z-index: 1;
+}
+
+/* First Image */
+.Comp4-trade-image {
+  width: 340px;
+  height: auto;
+  border-radius: 20px;
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(0 0 20px rgba(0, 81, 161, 0.6)); 
+}
+
+/* Second Image - Overlapping */
+.Comp4-trade-image-second {
+  width: 480px;
+  height: auto;
+  position: absolute;
+  bottom: -12px;
+  left: 125px;
+  z-index: 1;
+  filter: drop-shadow(0 0 20px rgba(0, 128, 255, 0.6)); 
+  border-radius: 20px;
+}
+
+
+
+
+.Comp4-trade-content {
+  flex: 1;
+  max-width: 700px;
+}
+
+.Comp4-tag {
+  display: inline-block;
+  background: #0d3b66;
+  color: white;
+  padding: 12px 24px;
+  font-size: 20px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.Comp4-trade-content h2 {
+    color: rgb(255, 255, 255);
+  font-size: 46px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.Comp4-description {
+  color: #f1f1f1;
+  font-size: 24px;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.Comp4-features {
+  list-style: none;
+  padding: 0;
+}
+
+.Comp4-features li {
+    color: rgb(220, 220, 220);
+  font-size: 20px;
+  letter-spacing: 1.3px;
+  margin-bottom: 12px;
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+  position: relative;
+    padding-left: 32px;
+}
+
+.Comp4-features li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+   color: #00aaff;
+  font-size: 26px;
+  font-weight: 100 !important;
+}
+
+.Comp4-features a {
+  color: #0d6efd;
+  text-decoration: underline;
+}
+
+.Comp4-features a:hover {
+  color: #084298;
+}

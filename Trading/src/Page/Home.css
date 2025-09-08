@@ -1,0 +1,7 @@
+.section-with-line {
+  border-bottom: 1px solid #ffffff; /* light gray line */
+}
+
+.section-with-line:last-child {
+  border-bottom: none; /* remove line after last component */
+}
